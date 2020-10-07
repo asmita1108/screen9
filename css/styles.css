@@ -25,6 +25,8 @@ body {
 /*----------------------------------------------
 /* REUSABLE COMPONENTS */
 /*----------------------------------------------*/
+
+/* MAIN CONTAINER */
 .mb-container {
   max-width: 375pt;
   height: 100vh;
@@ -44,7 +46,7 @@ body {
 }
 .search-header {
     height: 40pt;
-    width: 100%;
+    width: 468px;
     position: fixed;
 }
 
@@ -55,7 +57,8 @@ body {
 }
 
 .searchBar {
-  width: calc(375pt - 50px);
+  margin-left: 11px;    
+  width: calc(100% - 34px);
   height: 90%;
   border: 1pt solid #e3e3e3;
   background-color: #f5f4f4;
@@ -70,7 +73,7 @@ body {
 }
 .searchBar > input {
   border: none;
-  width: calc(100%-15px-19.07pt);
+  width: calc(100% - 50px);
   height: auto; 
   background: transparent;
   font-size: 14pt;
