@@ -1,0 +1,169 @@
+/*----------------------------------------------
+/* BASIC SETUPS */
+/*----------------------------------------------*/
+
+@font-face {
+    font-family: pedija-bold;
+    src: url(../fonts/poppins.bold.ttf);
+}
+@font-face {
+    font-family: pedija-regular;
+    src: url(../fonts/poppins.regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #141313;
+    font-family: pedija-regular;
+    text-rendering: optimizeLegibility;
+}
+
+/*----------------------------------------------
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------*/
+.mb-container {
+  max-width: 375pt;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 0px auto;
+  opacity: 1;
+  border: 1px solid #eee;
+  padding: 20px 15px;
+}
+
+/*----------------------------------------------
+/* Header */
+/*----------------------------------------------*/
+.icon-holder {
+    display: block;
+}
+.search-header {
+    height: 40pt;
+    width: 100%;
+    position: fixed;
+}
+
+.crossPageIcon {
+  width: 20px;
+  height: 100%;
+  float: left;
+}
+
+.searchBar {
+  width: calc(375pt - 50px);
+  height: 90%;
+  border: 1pt solid #e3e3e3;
+  background-color: #f5f4f4;
+  padding: 10px;
+  border-radius: 3pt;
+  float: left;
+}
+.searchBar > img {
+  width: 15px;
+  height: auto;
+  vertical-align: baseline;    
+}
+.searchBar > input {
+  border: none;
+  width: calc(100%-15px-19.07pt);
+  height: auto; 
+  background: transparent;
+  font-size: 14pt;
+  padding-left: 8px;
+  text-align: left;
+  color: #242A4B;
+  opacity: 100%;
+ 
+}
+::placeholder {
+  color: #bcbfd1;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #bcbfd1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #bcbfd1;
+}
+.searchBar > input:focus{
+    border: none;
+     border-style: none;
+    outline: none !important;
+}
+
+/*-----------------------------------------------
+/* DIVIDER row */
+/* --------------------------------------------*/
+
+.divider-1pt:after {
+    display: block;
+    height: 1pt;
+    background-color: #EDEDED;
+    content: " ";
+    width: 375pt;
+    margin: 40px -15px 0px -15px;
+}
+.divider-4pt:after {
+    display: block;
+    height: 4pt;
+    background-color: #f5f4f4;
+    content: " ";
+    width: 375pt;
+    margin: 47pt -15px 0px -15px;
+}
+.divider-10pt:after {
+    display: block;
+    height: 10pt;
+    background-color: #EFF0F7;
+    content: " ";
+    width: 375pt;
+    margin: 40px -15px 0px -15px;
+}
+
+/*-----------------------------------------------
+/* Goggle Map section */
+/* --------------------------------------------*/
+
+.map-container {
+    width: calc(100% + 30px); 
+    height: calc(100vh - 60pt);
+    line-height: 20px;
+    margin: 60pt -15px 0px -15px;
+    display:inline-block;
+    position:relative;
+}
+#map {
+        height: 100%;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+.map-container #done-btn {
+    position:fixed;
+    bottom:15px;
+    width: calc(375pt - 30px);
+    height: 50px;
+    margin: 0 15px;
+    padding: 12px 12px;
+    font-size: 14pt;
+    background: #FFCD00;
+    border: 1px solid #FFCD00 !important;
+    font-weight: 600;
+    font-family: pedija-bold;
+    color: #541871;
+}
+
+.map-container #done-btn:focus,
+.map-container #done-btn:active{
+     border: 1px solid #FFCD00 !important;
+}
+.map-container #done-btn:disabled{
+    background: #9faab752;
+    border: 1px solid #9faab752 !important;
+}
+
