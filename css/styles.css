@@ -35,7 +35,7 @@ body {
   margin: 0px auto;
   opacity: 1;
   border: 1px solid #eee;
-  padding: 20px 15px;
+  padding: 20px 15px 0px 15px;
 }
 
 /*----------------------------------------------
@@ -157,7 +157,7 @@ body {
     height: 4pt;
     background-color: #f5f4f4;
     content: " ";
-    width: 375pt;
+    width: 100vw;
     margin: 25pt -15px 0px -15px;
 }
 .divider-10pt:after {
