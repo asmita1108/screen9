@@ -46,25 +46,23 @@ body {
 }
 .search-header {
     height: 40pt;
-    width: 468px;
-    position: fixed;
+    width: 100%;
 }
 
 .crossPageIcon {
   width: 20px;
   height: 100%;
-  float: left;
 }
 
 .searchBar {
   margin-left: 11px;    
-  width: calc(100% - 34px);
+  width: calc(100% - 31px);
   height: 90%;
   border: 1pt solid #e3e3e3;
   background-color: #f5f4f4;
   padding: 10px;
   border-radius: 3pt;
-  float: left;
+  float: right;
 }
 .searchBar > img {
   width: 15px;
@@ -73,7 +71,7 @@ body {
 }
 .searchBar > input {
   border: none;
-  width: calc(100% - 50px);
+  width: calc(100% - 45px);
   height: auto; 
   background: transparent;
   font-size: 14pt;
@@ -81,7 +79,6 @@ body {
   text-align: left;
   color: #242A4B;
   opacity: 100%;
- 
 }
 ::placeholder {
   color: #bcbfd1;
@@ -97,8 +94,50 @@ body {
 }
 .searchBar > input:focus{
     border: none;
-     border-style: none;
+    border-style: none;
     outline: none !important;
+}
+/***********************************/
+ /* Clear button */
+/********************************/
+
+.clear-button {
+    flex: 1 0 auto;
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    line-height: 44px;
+    float: right;
+    width: 25px;
+}
+
+.lBbtTb {
+    height: 100%;
+    color: #80868b;
+    vertical-align: middle;
+    outline: none;
+}
+
+.z1asCe {
+    display: inline-block;
+    fill: #80868b;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+.z1asCe svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.searchBar > input:not([value=""]) + .clear-button {
+        display: flex;   
 }
 
 /*-----------------------------------------------
@@ -119,7 +158,7 @@ body {
     background-color: #f5f4f4;
     content: " ";
     width: 375pt;
-    margin: 47pt -15px 0px -15px;
+    margin: 30pt -15px 0px -15px;
 }
 .divider-10pt:after {
     display: block;
@@ -135,10 +174,10 @@ body {
 /* --------------------------------------------*/
 
 .map-container {
-    width: calc(100% + 30px); 
-    height: calc(100vh - 60pt);
+    width: calc(100% + 32px); 
+    height: calc(100% - 80px);
     line-height: 20px;
-    margin: 60pt -15px 0px -15px;
+    margin: 30pt -15px 0px -15px;
     display:inline-block;
     position:relative;
 }
@@ -148,8 +187,8 @@ body {
        }
 .map-container #done-btn {
     position:fixed;
-    bottom:15px;
-    width: calc(375pt - 30px);
+    bottom:35px;
+    width: calc(100% - 30px);
     height: 50px;
     margin: 0 15px;
     padding: 12px 12px;
@@ -169,4 +208,5 @@ body {
     background: #9faab752;
     border: 1px solid #9faab752 !important;
 }
+
 
