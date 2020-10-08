@@ -158,7 +158,7 @@ body {
     background-color: #f5f4f4;
     content: " ";
     width: 375pt;
-    margin: 30pt -15px 0px -15px;
+    margin: 25pt -15px 0px -15px;
 }
 .divider-10pt:after {
     display: block;
@@ -174,11 +174,12 @@ body {
 /* --------------------------------------------*/
 
 .map-container {
-    width: calc(100% + 32px); 
+    width: calc(100% + 32px);
     height: calc(100% - 80px);
     line-height: 20px;
-    margin: 30pt -15px 0px -15px;
-    display:inline-block;
+    border: none;
+    margin: 20pt -16px 0px -16px;
+    display:block;
     position:relative;
 }
 #map {
@@ -187,7 +188,7 @@ body {
        }
 .map-container #done-btn {
     position:fixed;
-    bottom:35px;
+    bottom:45px;
     width: calc(100% - 30px);
     height: 50px;
     margin: 0 15px;
